@@ -1,6 +1,6 @@
 # Modules
 
-## Power Supplie
+## Power Supplies
 ### +- 15V regulated, Cap Mulitiplier
 One or two boards can be user for real dual Mono setup
 ### +5V, 3.3V
