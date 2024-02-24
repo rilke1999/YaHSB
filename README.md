@@ -1,5 +1,5 @@
 # YaHSB
-Yet Another Highend Switch Box
+Yet Another Highend Switch  Box
 ## Project Goal
 Fully balanced switching box with level adjustment for the automated blind test of 2 sources, 2 amplifiers, and 2 pairs of speakers.
 
