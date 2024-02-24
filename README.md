@@ -23,7 +23,7 @@ KiCAD 8
 
 ## Brainstorming on Features
 (Completely open to ideas and changes)
-- Completely symmetrical
+- Completely balanced signal handling
 - Mono design with central control to be able to place the switch directly near speakers or monoblocks. (Modular design)
 - Central PSU and control unit with digital electronics
 - 2 pairs of speakers via terminal connectors
