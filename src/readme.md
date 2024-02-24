@@ -9,5 +9,6 @@
 
 ## ADDON: Firmware Update via WiFi
 ## ADDON: Configuration via Webfrontend
-## Orchestrate and store listening Projects
-## Online QUestionaire for blind A/B listening projects
+## ADDON: Orchestrate and store listening Projects
+## ADDON: Online Questionaire for blind A/B listening projects
+## ADDPM: PREAMP Mode
