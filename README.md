@@ -66,21 +66,21 @@ KiCAD 8
 - [NAME TestCASE] Input XLR / Buffer? / Level Adjustment / Output XLR / Input AMP / Output AMP
   
   Configuration Elements:
-    TestPathName : [A]
+  TestPathName : [A]
     Channel [L]  
-      Input : [XLR_i_1]
-      Buffer : [Yes / Now]
-      Level Adjustment: [-x] DB
-      Output : [XLR_o_1]
-      AMP_OUT : [AMP 1]
-      Speaker :[SPK_1]
-    Channel [R]
-      Input : [XLR_i_1]
-      Buffer : [Yes / Now]
-      Level Adjustment: [-x] DB
-      Output : [XLR_o_1]
-      AMP_OUT : [AMP 1]
-      Speaker :[SPK_1]
+-  Input : [XLR_i_1]
+-  Buffer : [Yes / Now]
+-  Level Adjustment: [-x] DB
+-  Output : [XLR_o_1]
+-  AMP_OUT : [AMP 1]
+-  Speaker :[SPK_1]
+  Channel [R]
+-   Input : [XLR_i_1]
+-   Buffer : [Yes / Now]
+-   Level Adjustment: [-x] DB
+-   Output : [XLR_o_1]
+-    AMP_OUT : [AMP 1]
+-    Speaker :[SPK_1]
 
 
 ### Configuration Test Source Signal
@@ -89,6 +89,7 @@ Here we Define the source of the test signals. In case of beeing Digital they ca
 - Roon API [endpoint / playlist]
 - Manual for non streaming content.
 
+### Automatic Volume Leveling
 ### Test Scenarios
 
 - AMP Test
