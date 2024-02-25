@@ -2,13 +2,7 @@
 
 ## Main Controller PSU 
 
-### +- 15V regulated, Cap Mulitiplier
-One or two boards can be user for real dual Mono setup
-### +5V, 3.3V
-Relais and Digital Voltages
-### Digital Controller + Display
-Hosts Display and MCU
-
+https://github.com/rilke1999/YaHSB/blob/main/hardware/Controller-PSU.md)
 
 
 
