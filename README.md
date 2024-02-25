@@ -22,20 +22,85 @@ Depending on the team, English or German (thanks to AI, this is no longer a prob
 KiCAD 8
 
 ## Brainstorming on Features
-(Completely open to ideas and changes)
-- Completely balanced signal handling
-- Mono design with central control to be able to place the switch directly near speakers or monoblocks. (Modular design)
-- Central PSU and control unit with digital electronics
-- 2 pairs of speakers via terminal connectors
-- 2 XLR inputs
-- 2 XLR outputs
-- Optional: Trigger signal for turning on amplifiers
-- Volume adjustment via MUSES 72323
-- Optional: Input buffer switchable
-- Optional: Automatic level measurement
-- STM32 or ESP32S3 as controller (If control over web frontend, preferably ESP32)
-- OLED display and 2 encoders for control
-- Implementation of A/B blind test including documentation
+
+
+## Specifications
+
+- 2 x 4 Inputs Balanced 
+- 2 x 3 Outputs Balanced
+- 2 x 3 Input Speaker
+- 2 x 3 Output Speaker
+- Level attenuation programmable (can it be turned off?)
+- Output Buffer can be configured inthe signal path
+- Synchronize test process with participant questionnaire
+- Preamp mode
+- Modules (can but do not have to be built separately)
+  - PSU Analog
+  - PSU Digital
+  - MCU & Display & Hardware UI
+  - Source Selector Input
+  - Sink Selector Output
+  - Optional: Buffer
+  - Level Adjustment
+  - Optional additional relay box for additional test scenarios
+
+## Basic Requirements
+
+- No Digital I/O with the slaves during listening
+- Remotely configurable via IR / WiFi
+- Online updates
+- True Dual Mono possible
+- Flexible preamp
+- Open Source / Open Hardware (license type to be discussed)
+- SMD where sensible, TH where necessary
+
+## To be discussed
+
+- Non balanced input / output
+
+## User Stories Test Scenarios: (Idea generation unformatted)
+
+### Definition Test Path
+
+- Maximum 32 Cases
+- [NAME TestCASE] Input XLR / Buffer? / Level Adjustment / Output XLR / Input AMP / Output AMP
+  
+  Configuration Elements:
+    TestPathName : [A]
+    Channel [L]  
+      Input : [XLR_i_1]
+      Buffer : [Yes / Now]
+      Level Adjustment: [-x] DB
+      Output : [XLR_o_1]
+      AMP_OUT : [AMP 1]
+      Speaker :[SPK_1]
+    Channel [R]
+      Input : [XLR_i_1]
+      Buffer : [Yes / Now]
+      Level Adjustment: [-x] DB
+      Output : [XLR_o_1]
+      AMP_OUT : [AMP 1]
+      Speaker :[SPK_1]
+
+
+### Configuration Test Source Signal
+Here we Define the source of the test signals. In case of beeing Digital they can be trigger via a UPNP Playlist, or via a Playlist in roon.
+- UPNP control [endpoint / playlist]
+- Roon API [endpoint / playlist]
+- Manual for non streaming content.
+
+### Test Scenarios
+
+- AMP Test
+- Speaker Test
+- Source Test
+
+### Test Process
+
+- BLIND Scenario [1,2,3---]
+- Include obfuscation by different volume levels
+- Manually Switched
+- Online questionnaire during the test
 
 ## Project Milestones
 
