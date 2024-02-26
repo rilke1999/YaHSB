@@ -104,24 +104,32 @@ graph TD;
 - [NAME TestCASE] Input XLR / Buffer? / Level Adjustment / Output XLR / Input AMP / Output AMP
 ```json
 {
-  "TestPathName": "A",
-  "Channels": {
-    "L": {
-      "Input": "XLR_i_1",
-      "Buffer": "Yes / No",
-      "Level Adjustment": "-x DB",
-      "Output": "XLR_o_1",
-      "AMP_OUT": "AMP 1",
-      "Speaker": "SPK_1"
-    },
-    "R": {
-      "Input": "XLR_i_1",
-      "Buffer": "Yes / No",
-      "Level Adjustment": "-x DB",
-      "Output": "XLR_o_1",
-      "AMP_OUT": "AMP 1",
-      "Speaker": "SPK_1"
-    }
+    "PathName": "TextDescription of path",
+    "Channels": {
+        "L": {
+            "Input": "inp1",
+            "Input_desc" : "TextDescription of Input",   
+            "Buffer": "Yes",
+            "Level Adjustment": "-x DB",
+            "Output": "out1",
+            "Output_desc" : "TextDescription of Output",
+            "SPKin" : "SPKin1",
+            "SPKin_desc" : "TextDescription of Speaker_in",
+            "SPKout": "SPKout1"
+            "SPKout_desc" : "TextDescription of Speaker_out",
+            },
+        "R": {
+            "Input": "inp1",
+            "Input_desc" : "Bricasti M12",
+            "Buffer": "No",
+            "Level Adjustment": "-12 DB",
+            "Output": "out1",
+            "Output_desc" : "McIntosh MC275",
+            "SPKin" : "SPKin1",
+            "SPKin_desc" : "4 Ohm Output MC275",
+            "SPKout": "SPKout1"
+            "SPKout_desc" : "Magico Q5",
+            }
   }
 }
 ```
