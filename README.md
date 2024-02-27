@@ -1,7 +1,8 @@
 # YaHSB
 Yet Another Highend Switch  Box
 ## Project Goal
-Fully balanced switching box with level adjustment for the automated blind test of 4 sources, 3 amplifiers, and 3 pairs of speakers.
+Fully balanced switching box with volume level adjustment for the automated blind test of 4 sources, 3 amplifiers, and 3 pairs of speakers.
+The ideas is to build a central unit with PSUs, MCU, rotary encoders and display connected to slave untis for doing the switching, and volume leveling. In this slave we can forsee an option Buffer stage.
 
 ## Motivation
 My old mechanical switching box that I built 20 years ago is not symmetrical, and the level adjustment is only manual and with manual measurement. Moreover, it is only non balanced.
@@ -10,19 +11,26 @@ My old mechanical switching box that I built 20 years ago is not symmetrical, an
 The developed hardware and software are open and free to use. Possibly under the MIT public license?
 
 ## Team
-Appreciative and open minded.
+Appreciative and open minded. Building a small team would be great to complement our talents.
 
 ## Documentation
-GitHub (those unfamiliar with it will be taught, it's not rocket science).
+GitHub 
+
 
 ## Language
 Depending on the team, English or German (thanks to AI, this is no longer a problem today).
 
-## PCB Layout
+Device itself should be configurable. (Initial german / english / french)
+
+## schematics and PCB Layout
 KiCAD 8
+- SMD were reasonable
+- TH where necessary
+- reusibility in othe project
 
 ## Mechanical CAD
 Freecad
+
 ## Basic Idea
 
 ```mermaid
@@ -97,11 +105,25 @@ graph TD;
 - Non balanced input / output
 
 ## User Stories Test Scenarios: (Idea generation unformatted)
+### Configure Input/Output/SPKin/SPKout
+- Allows to attribute a 32 Character Devicename to a connectio
+- can be stored as a preset or temporary. 16 presets possible (Presets are different for each device group except output and SPKin (input / output / SPKout)
+- deviceUI
+- exposed via API
 
-### Definition Test Path
+### Definition listening path
 
-- Maximum 32 Cases
-- [NAME TestCASE] Input XLR / Buffer? / Level Adjustment / Output XLR / Input AMP / Output AMP
+- Maximum 32 pathes
+- a listening path contains
+- - Input
+  - Output
+  - Buffer usage
+  - Volume adjustment
+  - SPKin
+  - SPKout
+
+- deviceUI
+- exposed via API:
 ```json
 {
     "PathName": "TextDescription of path",
