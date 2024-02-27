@@ -177,7 +177,16 @@ Here we Define the source of the test signals. In case of beeing Digital they ca
 - Online questionnaire during the test
 
 ## Project Milestones
-
+```mermaid
+%%{init: {'theme': 'default'}}%%
+timeline
+    dateFormat YYYY-MM-DD
+    section Project Milestones
+    Final specification: 2024-03-31 : 2024-03-31
+    Circuit diagram stable: 2024-06-30 : 2024-06-30
+    RC1 of the PCB: 2024-09-30 : 2024-09-30
+    Practical test: 2024-11-30 : 2024-11-30
+```
 - End of March 2024: Final specification
 - End of June 2024: Circuit diagram stable
 - End of September 2024: RC1 of the PCB
