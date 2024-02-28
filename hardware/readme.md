@@ -13,3 +13,9 @@ Input, Output, Speaker Terminal, connection To Buffer and Volume control
 
 ## Volume Control
 Muses Volume Control
+
+
+## Components
+### Relais Speaker
+https://www.digikey.de/de/products/detail/panasonic-electric-works/S4EB-L2-5V/649176
+
